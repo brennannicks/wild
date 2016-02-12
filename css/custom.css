@@ -1,0 +1,49 @@
+/* Static image */
+#intro.bg-image .container-fluid {
+  background-image: url('../img/wild/1.png');
+  background-size: cover;
+}
+
+/* Rain background */
+#intro.bg-rain .container-fluid {
+  background-image: url('../img/wild/8.jpg');
+  background-size: cover;
+}
+
+/* Snow background */
+#intro #snow {
+  background-image: url('../img/wild/9.jpg');
+  background-size: cover;
+}
+
+/* Static color */
+#intro.color .container-fluid {
+  background: #5D815B;
+}
+
+
+
+
+/* Introduction background */
+#introduction .half.bg {
+  background-image: url('../img/wild/2.png');
+  background-size: cover;
+}
+
+/* packages background */
+#packages .half.bg {
+  background-image: url('../img/wild/3.png');
+  background-size: cover;
+}
+
+/* features background */
+#features .half.bg {
+  background-image: url('../img/wild/4.png');
+  background-size: cover;
+}
+
+/* About background */
+#about .half.bg {
+  background-image: url('../img/wild/5.jpg');
+  background-size: cover;
+}

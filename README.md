@@ -1,0 +1,1 @@
+A project for rugged vehicle rental company based in Colorado.  Deployed to free heroku server for demo purposed but to deploy elsewhere, simply delete index.php and rename home-image.html to index.html

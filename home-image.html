@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Into the Wild Expeditions">
+    <meta name="description" content="Into the Wild Overland">
     <meta name="author" content="Darren Jack & Brennan Nicks">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Into the Wild Expeditions</title>
+    <title>Into the Wild Overland</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
@@ -25,13 +25,17 @@
     <link href="css/abel.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Themeswitcher - REMOVE THIS LINE -->
-    <!-- <link href="css/themeswitcher.css" rel="stylesheet"> -->
-
     <!-- HTML5 shiv for IE8 support -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
+
+    <!-- Google Calendar API -->
+    <script src="js/calendar.js">
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth">
+    </script>
+
+    </script>
   </head>
 
   <!-- Replace class 'light' with 'dark' for dark theme -->
@@ -44,7 +48,7 @@
     <nav class="navbar navbar-abel navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#intro">Into the Wild Expeditions</a>
+          <a class="navbar-brand" href="#intro">Into the Wild Overland</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 
@@ -72,7 +76,7 @@
         <div class="boxed">
 
           <div class="header intro">
-            <h1>Into the Wild Expeditions</h1>
+            <h1>Into the Wild Overland</h1>
             <img src="img/separator.png" alt="" />
             <h2 class="subtitle">"Stay Wild"</h2>
           </div>
@@ -137,7 +141,24 @@
 
               <div class="row">
                 <div class="col-sm-6">
-                  <div class="item features-item" data-image="img/wild/interiorthumb.jpg" data-title="Interior" data-caption="Interior Features">
+                  <div class="item features-item" data-image="img/wild/interiorthumb.jpg" data-title="Interior Features" data-caption="
+                    * 2 Burner Gas Stove
+                    * Kitchen Sink
+                    * 12 Gallons Onboard Fresh Water
+                    * Refrigerator with Freezer
+                    * Ducted Auxiliary Air Conditioning
+                    * Window Shades – Daytime and Privacy
+                    * Sleeping for 3 (5 with provided tent and sleeping bags)
+                    * Seating for 5
+                    * 2 Swivel Captain Chairs
+                    * CD player w/USB/AUX
+                    * Cruise Control
+                    * Air conditioning – Front and House
+                    * Stand up Height is 6’1″
+                    * Interior Lighting
+                    * Propane Forced Air Heater
+                    * 12V and 110V Power Sources
+                    * A Ton of Storage!">
                     <div class="caption">
                       <div class="inner">
                         <h3>Interior</h3>
@@ -150,8 +171,23 @@
                   </div><!-- /.item -->
                 </div>
                 <div class="col-sm-6">
-                  <div class="item features-item" data-image="img/wild/exteriorthumb.png" data-title="Abel" data-caption="---">
-                    <div class="caption">
+                  <div class="item features-item" data-image="img/wild/exteriorthumb.png" data-title="2003 E350 Sportsmobile 4×4" data-caption="
+                    * 6.8L V10
+                    * Electronic Transfer Case
+                    * BFGoodrich All Terrain Tires
+                    * Custom Tuned Fox Suspension
+                    * Aluminess Front and Rear Bumpers
+                    * Full Size Spare Tire
+                    * Extra Fuel/Water Carrier
+                    * 6″ Hella Off Road Lights
+                    * On Board Propane
+                    * Dual Deep Cycle Auxiliary Batteries
+                    * 2″ Rear Receiver Hitch
+                    * Shore Power
+                    * City Water Connection
+                    * Bike Rack Available
+                    * ARB 8ft side awning">
+                     <div class="caption">
                       <div class="inner">
                         <h3>Exterior</h3>
                         <!-- <span>Web design</span> -->
@@ -165,7 +201,27 @@
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <div class="item features-item" data-image="img/wild/included.jpg" data-title="What's Included" data-caption="---">
+                  <div class="item features-item" data-image="img/wild/included.jpg" data-title="What's Included" data-caption="
+                  * Bedding/Linens (4)
+                  * Pots/Pans/Cookware (2)
+                  * Plates/Bowls/Silverware (4)
+                  * Coffee/French Press (1)
+                  * Dry Goods, Creamer, Coffee, Cooking Seasonings
+                  * Fresh Water (15 Gallons)
+                  * Dish/Hand Soap (1)
+                  * Dish Towels (2)
+                  * Lantern, Flashlight, Hatchet, Binoculars
+                  * Maps, Guide Books, Travel Resources
+                  * Beach Towels (4)
+                  * Folding Chairs (4)
+                  * Folding Camp Table (1)
+                  * On Board Propane (10 lbs)
+                  * Battery Jumper Box
+                  * Recovery Gear
+                  * Bike/Ski Rack
+                  * 2 Person Tent
+                  * 2 Sleeping Bags/Pads
+                  * Free Electricity Brought To You By The Sun!">
                     <div class="caption">
                       <div class="inner">
                         <h3>What's Included</h3>
@@ -335,6 +391,41 @@
         </div>
       </div>
     </section><!-- /#contact -->
+
+    <section class="section" id="calendar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 half">
+            <!-- <div class="calendar-container">
+              <div id="calendars"></div>
+            </div> -->
+            <!-- Calendar Output -->
+            <div id="authorize-div" style="display: none">
+              <span>Authorize access to Google Calendar API</span>
+              <!--Button for the user to click to initiate auth sequence -->
+              <button id="authorize-button" onclick="handleAuthClick(event)">
+                Authorize
+              </button>
+            </div>
+            <pre id="output"></pre>
+          </div>
+          <div class="col-lg-6 half">
+
+            <div class="content">
+
+              <div class="section-header">
+                <h2 class="section-title">Availability</h2>
+                <h3 class="section-subtitle">Check our calendar for availability and call to reserve Into The Wild Advenutre</h3>
+                <h3 class="section-subtitle">P - 720-515-2762</h3>
+                <h3 class="section-subtitle">E - <a href="mailto:info@intothewildexpeditionrentals.com?Subject=Expedition Rental" target="_top">info@intothewildexpeditionrentals.com</a></h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /#contact -->
+
 
     <nav id="vertical-nav">
       <ul>

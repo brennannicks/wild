@@ -31,8 +31,8 @@
     <![endif]-->
 
     <!-- Google Calendar API -->
-    <script src="js/calendar.js">
-    <script src="https://apis.google.com/js/client.js?onload=checkAuth">
+    <!-- <script src="js/calendar.js">
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth"> -->
     </script>
 
     </script>
@@ -392,40 +392,43 @@
       </div>
     </section><!-- /#contact -->
 
-    <section class="section" id="calendar">
+    <section class="section" id="contact">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 half">
-            <!-- <div class="calendar-container">
-              <div id="calendars"></div>
-            </div> -->
-            <!-- Calendar Output -->
-            <div id="authorize-div" style="display: none">
-              <span>Authorize access to Google Calendar API</span>
-              <!--Button for the user to click to initiate auth sequence -->
-              <button id="authorize-button" onclick="handleAuthClick(event)">
-                Authorize
-              </button>
+          <div class="col-lg-6 half maps">
+            <div class="map-container">
+              <div id="maps"></div>
             </div>
-            <pre id="output"></pre>
           </div>
           <div class="col-lg-6 half">
 
             <div class="content">
-
               <div class="section-header">
-                <h2 class="section-title">Availability</h2>
-                <h3 class="section-subtitle">Check our calendar for availability and call to reserve Into The Wild Advenutre</h3>
+                <h2 class="section-title">Contact</h2>
+                <h3 class="section-subtitle">Get in touch for more information and availability.</h3>
                 <h3 class="section-subtitle">P - 720-515-2762</h3>
                 <h3 class="section-subtitle">E - <a href="mailto:info@intothewildexpeditionrentals.com?Subject=Expedition Rental" target="_top">info@intothewildexpeditionrentals.com</a></h3>
               </div>
 
+              <form method="post" class="form">
+                <div class="form-group">
+                  <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="text" />
+                </div>
+                <textarea class="form-control" id="message" name="message" placeholder="Message" rows="6"></textarea>
+                <br />
+                <button class="btn btn-dark" type="submit">Send message</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section><!-- /#contact -->
-
 
     <nav id="vertical-nav">
       <ul>

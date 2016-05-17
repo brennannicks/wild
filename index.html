@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Into the Wild Overland">
     <meta name="author" content="Darren Jack & Brennan Nicks">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="img/itw-favicon.png">
 
     <title>Into the Wild Overland</title>
 
@@ -28,18 +28,26 @@
     <!-- HTML5 shiv for IE8 support -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
+        </script><![endif]-->
 
     <!-- Google Calendar API -->
     <!-- <script src="js/calendar.js">
     <script src="https://apis.google.com/js/client.js?onload=checkAuth"> -->
-    </script>
+    <!-- </script> -->
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-76687801-3', 'auto');
+    ga('send', 'pageview');
 
     </script>
   </head>
 
-  <!-- Replace class 'light' with 'dark' for dark theme -->
-  <!-- Replace class 'pt-sans' with 'open-sans' for Open Sans font -->
   <body class="pt-sans light">
     <div class="loading">
       <span class="fa fa-circle-o-notch fa-spin"></span>
@@ -48,23 +56,32 @@
     <nav class="navbar navbar-abel navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#intro">Into the Wild Overland</a>
+          <a class="navbar-brand" href="index.html">Into the Wild Overland</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
 
-          <div id="hamburger" class="bg-check navbar-right dark">
+          <div id="hamburger" class="bg-check navbar-right dark open">
             <span></span>
             <span></span>
             <span></span>
           </div>
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="hidden-xs" href="#introduction">Intro</a></li>
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li><a href="http://blog.itwoverland.com">Blog</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#packages">Packages</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <!-- <li><a href="components.html">Components</a></li> -->
+            <li>
+              <a href="https://www.instagram.com/intothewildexpeditionrentals" id="navbar-social__link_instagram" target="_blank">
+                <i class="fa fa-instagram navbar-social__link"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/intothewildexpeditionrentals/" id="navbar-social__link_facebook" target="_blank">
+                <i class="fa fa-facebook-square navbar-social__link"></i>
+              </a>
+            </li>
           </ul>
 
         </div>
@@ -126,7 +143,7 @@
       <div class="container-fluid">
         <div class="row">
           <div id="featuresPlaceholder" class="col-lg-6 half bg">
-            <div class="zoom" data-image="img/wild/4.png" data-title="I was a comfortable kid" data-caption="But I don't think about it much anymore">
+            <div class="zoom" data-image="img/wild/4.png" data-title="" data-caption="">
               <i class="fa fa-expand"></i>
             </div>
           </div>
@@ -367,12 +384,23 @@
             <div class="content">
               <div class="section-header">
                 <h2 class="section-title">Contact</h2>
-                <h3 class="section-subtitle">Get in touch for more information and availability.</h3>
-                <h3 class="section-subtitle">P - 720-515-2762</h3>
-                <h3 class="section-subtitle">E - <a href="mailto:info@intothewildexpeditionrentals.com?Subject=Expedition Rental" target="_top">info@intothewildexpeditionrentals.com</a></h3>
+                <h3 class="section-subtitle">Get in touch for more information, prices and availability.</h3>
+                <h3 class="section-subtitle"><i class="fa fa-phone-square"></i> - <a href="tel:+1-720-515-2762">720-515-2762</a></h3>
+                <h3 class="section-subtitle"><i class="fa fa-envelope"></i> - <a href="mailto:info@intothewildoverland.com?Subject=Expedition Rental" target="_top">info@intothewildoverland.com</a></h3>
+                <h3 class="section-subtitle">
+                  <i class="fa fa-instagram"></i> -
+                  <a href="https://www.instagram.com/intothewildexpeditionrentals"  target="_blank">
+                    Hipstergram
+                  </a>
+                </h3>
+                <h3 class="section-subtitle">
+                  <i class="fa fa-facebook-square"></i> -
+                  <a href="https://www.facebook.com/intothewildexpeditionrentals/"  target="_blank">
+                    Book of Face
+                  </a>
               </div>
 
-              <form method="post" class="form">
+              <form action="https://formspree.io/info@intothewildexpeditionrentals.com"  method="post" class="form">
                 <div class="form-group">
                   <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" />
                 </div>
@@ -382,45 +410,7 @@
                 <div class="form-group">
                   <input class="form-control" id="email" name="email" placeholder="Email" type="text" />
                 </div>
-                <textarea class="form-control" id="message" name="message" placeholder="Message" rows="6"></textarea>
-                <br />
-                <button class="btn btn-dark" type="submit">Send message</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- /#contact -->
-
-    <section class="section" id="contact">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 half maps">
-            <div class="map-container">
-              <div id="maps"></div>
-            </div>
-          </div>
-          <div class="col-lg-6 half">
-
-            <div class="content">
-              <div class="section-header">
-                <h2 class="section-title">Contact</h2>
-                <h3 class="section-subtitle">Get in touch for more information and availability.</h3>
-                <h3 class="section-subtitle">P - 720-515-2762</h3>
-                <h3 class="section-subtitle">E - <a href="mailto:info@intothewildexpeditionrentals.com?Subject=Expedition Rental" target="_top">info@intothewildexpeditionrentals.com</a></h3>
-              </div>
-
-              <form method="post" class="form">
-                <div class="form-group">
-                  <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" />
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" />
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" name="email" placeholder="Email" type="text" />
-                </div>
-                <textarea class="form-control" id="message" name="message" placeholder="Message" rows="6"></textarea>
+                <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
                 <br />
                 <button class="btn btn-dark" type="submit">Send message</button>
               </form>
@@ -437,41 +427,17 @@
       </ul>
     </nav><!-- /#vertical-nav -->
 
-    <!-- Themeswitcher - REMOVE THESE LINES -->
-    <!-- <div class="themeswitcher">
-      <div class="toggle"><i class="fa fa-gear"></i></div>
-      <div class="styles">
-        <h4>Choose style</h4>
-        <div class="style light" data-style="light"></div>
-        <div class="style dark" data-style="dark"></div>
-      </div>
-      <div class="fonts">
-        <h4>Choose font</h4>
-        <div class="font pt-sans" data-font="pt-sans">
-          <span class="head">PT Sans</span>
-          <span class="body">PT Serif</span>
-        </div>
-        <div class="font open-sans" data-font="open-sans">
-          <span class="head">Open Sans</span>
-          <span class="body">Open Sans</span>
-        </div>
-      </div>
-    </div><!-- /.themeswitcher --> -->
-
     <!-- Scripts -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbLAnbpDA7brte9W35wIfqX0tOoJYdy60">
-    // <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/curtains.js"></script>
     <script src="js/smoothScroll.js"></script>
     <script src="js/slippry.min.js"></script>
     <script src="js/intense.js"></script>
-    <script src="js/background-check.min.js"></script>
+    <!-- <script src="js/background-check.min.js"></script> -->
     <script src="js/main.js"></script>
 
-    <!-- Themeswitcher - REMOVE THIS LINE -->
-    <!-- <script src="js/themeswitcher.js"></script> -->
 
   </body>
 </html>

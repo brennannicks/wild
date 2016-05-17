@@ -4,7 +4,7 @@
 $(window).load(function() {
   setTimeout(function () {
     $(".loading").fadeOut("slow");
-  }, 1000);
+  }, 100);
 });
 
 /***********************************************
@@ -179,7 +179,7 @@ window.onload = function() {
 * Hamburger menu behaviour
 ***********************************************/
 $(window).scroll(function() {
-  if($(document).scrollTop() > 1){
+  if($(document).scrollTop() > 34){
     $('#hamburger').removeClass('dark');
   }
   else {
@@ -189,19 +189,38 @@ $(window).scroll(function() {
 
 // Animate icon on click
 $(document).ready(function(){
+
+  $('.navbar-abel').toggleClass('open');
+
   $('#hamburger').click(function(){
     $(this).toggleClass('open');
     $('.navbar-abel').toggleClass('open');
   });
 });
 
+// Float navbar links left on smaller screen size
+
+(function($) {
+    var $window = $(window),
+        $navlist = $('#nav-list');
+
+    $window.resize(function resize(){
+        if ($window.width() < 915) {
+            return $navlist.removeClass('navbar-right').addClass('navbar-left');
+        }
+
+    }).trigger('resize');
+})(jQuery);
+
+
+
 // Set hamburger icon color depending on background (light or dark)
-document.addEventListener('DOMContentLoaded', function () {
-  BackgroundCheck.init({
-    targets: '.bg-check',
-    images: '.bg'
-  });
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//   BackgroundCheck.init({
+//     targets: '.bg-check',
+//     images: '.bg'
+//   });
+// });
 
 
 /***********************************************

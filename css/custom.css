@@ -1,6 +1,6 @@
 /* Static image */
 #intro.bg-image .container-fluid {
-  background-image: url('../img/wild/1.png');
+  background-image: url('../img/wild/1.jpg');
   background-size: cover;
 }
 
@@ -26,19 +26,19 @@
 
 /* Introduction background */
 #introduction .half.bg {
-  background-image: url('../img/wild/2.png');
+  background-image: url('../img/wild/2.jpg');
   background-size: cover;
 }
 
 /* packages background */
 #packages .half.bg {
-  background-image: url('../img/wild/3.png');
+  background-image: url('../img/wild/3.jpg');
   background-size: cover;
 }
 
 /* features background */
 #features .half.bg {
-  background-image: url('../img/wild/4.png');
+  background-image: url('../img/wild/4.jpg');
   background-size: cover;
 }
 

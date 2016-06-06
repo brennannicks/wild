@@ -237,3 +237,20 @@ $('a').click(function(e){
   }
 
 });
+
+/***********************************************
+* Bootstrap default behavior
+***********************************************/
+// Bootstrap Custom JS
+// $(document).ready(function() {
+//
+//   // Tooltip opt-in
+//   // $('[data-toggle="tooltip"]').tooltip()
+//
+//   // About Us Show full Bio
+//   $('#myModal-btn').click(function () {
+//     $('#myModal').modal();
+//   });
+//
+//
+// });

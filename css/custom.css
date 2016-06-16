@@ -30,20 +30,33 @@
   background-size: cover;
 }
 
-/* packages background */
-#packages .half.bg {
+/* Features background */
+#features .half.bg {
   background-image: url('../img/wild/3.jpg');
   background-size: cover;
 }
 
-/* features background */
-#features .half.bg {
+/* Van Introduction background */
+#introduction-van .half.bg {
   background-image: url('../img/wild/4.jpg');
+  background-size: cover;
+}
+
+/* Van Features background */
+#features-van .half.bg {
+  background-image: url('../img/wild/5.jpg');
+  background-size: cover;
+}
+
+
+/* packages background */
+#packages .half.bg {
+  background-image: url('../img/wild/6.jpg');
   background-size: cover;
 }
 
 /* About background */
 #about .half.bg {
-  background-image: url('../img/wild/5.jpg');
+  background-image: url('../img/wild/7.jpg');
   background-size: cover;
 }

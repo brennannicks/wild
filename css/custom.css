@@ -36,6 +36,12 @@
   background-size: cover;
 }
 
+/* Trailer background */
+#trailer .half.bg {
+  background-image: url('../img/wild/trailer.jpg');
+  background-size: cover;
+}
+
 /* Van Introduction background */
 #introduction-van .half.bg {
   background-image: url('../img/wild/4.jpg');

@@ -217,10 +217,6 @@ $(document).ready(function() {
             'src': 'img/wild/build8.jpg',
             'thumb': 'img/wild/build8.jpg',
             // 'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
-        }, {
-            'src': 'img/wild/build9.jpg',
-            'thumb': 'img/wild/build9.jpg',
-            // 'subHtml': "<h4>Coniston Calmness</h4><p>Beautiful morning</p>"
         }]
     })
     //

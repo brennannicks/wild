@@ -4,9 +4,9 @@
   background-size: cover;
 }
 
-/* Rain background */
-#intro.bg-rain .container-fluid {
-  background-image: url('../img/wild/8.jpg');
+/* Thanks background */
+#thanks.bg-thanks .container-fluid {
+  background-image: url('../img/wild/0.jpg');
   background-size: cover;
 }
 

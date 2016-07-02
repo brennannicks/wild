@@ -88,10 +88,15 @@ $(document).ready(function() {
     $(this).lightGallery({
         dynamic: true,
         dynamicEl: [{
-            "src": 'img/wild/int1.png',
-            'thumb': 'img/wild/int1.png',
-            'subHtml': '<h2>Specifications</h2>'
-        }, {
+          "src": 'img/wild/int0.png',
+          'thumb': 'img/wild/int1.png',
+          'responsive': 'img/wild/int00.png 575, img/wild/int0.png 5000',
+          'subHtml': '<h1>Specifications</h1>',
+      }, {
+          'src': 'img/wild/int1.jpg',
+          'thumb': 'img/wild/int1.png',
+          // 'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+      }, {
             'src': 'img/wild/int2.jpg',
             'thumb': 'img/wild/int2.jpg',
             // 'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
@@ -118,10 +123,15 @@ $(document).ready(function() {
     $(this).lightGallery({
         dynamic: true,
         dynamicEl: [{
-            "src": 'img/wild/ext1.png',
-            'thumb': 'img/wild/ext1.png',
-            'subHtml': '<h2>Specifications</h2>'
-        }, {
+          "src": 'img/wild/ext0.png',
+          'thumb': 'img/wild/ext1.png',
+          'responsive': 'img/wild/ext00.png 575, img/wild/ext0.png 5000',
+          'subHtml': '<h1>Specifications</h1>',
+      }, {
+          'src': 'img/wild/ext1.jpg',
+          'thumb': 'img/wild/ext1.png',
+          // 'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
+      }, {
             'src': 'img/wild/ext2.jpg',
             'thumb': 'img/wild/ext2.jpg',
             // 'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
@@ -152,9 +162,14 @@ $(document).ready(function() {
     $(this).lightGallery({
         dynamic: true,
         dynamicEl: [{
-            "src": 'img/wild/kit1.png',
+            "src": 'img/wild/kit0.png',
             'thumb': 'img/wild/kit1.png',
-            'subHtml': '<h2>Specifications</h2>'
+            'responsive': 'img/wild/kit00.png 575, img/wild/kit0.png 5000',
+            'subHtml': '<h1>Specifications</h1>',
+        }, {
+            'src': 'img/wild/kit1.jpg',
+            'thumb': 'img/wild/kit1.png',
+            // 'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
         }, {
             'src': 'img/wild/kit2.jpg',
             'thumb': 'img/wild/kit2.jpg',
@@ -186,9 +201,14 @@ $(document).ready(function() {
     $(this).lightGallery({
         dynamic: true,
         dynamicEl: [{
-            "src": 'img/wild/build1.png',
+            "src": 'img/wild/build0.png',
+            'thumb': 'img/wild/build1.jpg',
+            'responsive': 'img/wild/build00.png 575, img/wild/build0.png 5000',
+            'subHtml': '<h1>Specifications</h1>',
+        }, {
+            'src': 'img/wild/build1.jpg',
             'thumb': 'img/wild/build1.png',
-            'subHtml': '<h2>Specifications</h2>'
+            // 'subHtml': "<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"
         }, {
             'src': 'img/wild/build2.png',
             'thumb': 'img/wild/build2.png',

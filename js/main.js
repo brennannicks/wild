@@ -91,7 +91,7 @@ $(document).ready(function() {
           "src": 'img/wild/int0.png',
           'thumb': 'img/wild/int1.png',
           'responsive': 'img/wild/int00.png 575, img/wild/int0.png 5000',
-          'subHtml': '<h1>Specifications</h1>',
+          'subHtml': '<h1>Interior Specifications</h1>',
       }, {
           'src': 'img/wild/int1.jpg',
           'thumb': 'img/wild/int1.png',
@@ -126,7 +126,7 @@ $(document).ready(function() {
           "src": 'img/wild/ext0.png',
           'thumb': 'img/wild/ext1.png',
           'responsive': 'img/wild/ext00.png 575, img/wild/ext0.png 5000',
-          'subHtml': '<h1>Specifications</h1>',
+          'subHtml': '<h1>Exterior Specifications</h1>',
       }, {
           'src': 'img/wild/ext1.jpg',
           'thumb': 'img/wild/ext1.png',
@@ -165,7 +165,7 @@ $(document).ready(function() {
             "src": 'img/wild/kit0.png',
             'thumb': 'img/wild/kit1.png',
             'responsive': 'img/wild/kit00.png 575, img/wild/kit0.png 5000',
-            'subHtml': '<h1>Specifications</h1>',
+            'subHtml': '<h1>Kitchen Specifications</h1>',
         }, {
             'src': 'img/wild/kit1.jpg',
             'thumb': 'img/wild/kit1.png',
@@ -204,7 +204,7 @@ $(document).ready(function() {
             "src": 'img/wild/build0.png',
             'thumb': 'img/wild/build1.jpg',
             'responsive': 'img/wild/build00.png 575, img/wild/build0.png 5000',
-            'subHtml': '<h1>Specifications</h1>',
+            'subHtml': '<h1>Build Specifications</h1>',
         }, {
             'src': 'img/wild/build1.jpg',
             'thumb': 'img/wild/build1.png',

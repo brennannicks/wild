@@ -280,6 +280,8 @@ $(document).ready(function(){
 (function($) {
     var $window = $(window),
         $navlist = $('#nav-list');
+        $navAbel = $('.navbar-abel');
+        $navBurger = $('#hamburger');
 
     $window.resize(function resize(){
         if ($window.width() < 915) {
@@ -287,8 +289,30 @@ $(document).ready(function(){
         }
 
     }).trigger('resize');
+
+    $window.resize(function resize(){
+        if ($window.width() < 650) {
+            return $navAbel.toggleClass('open') + $navBurger.toggleClass('open');
+        }
+
+    }).trigger('resize');
+
+
 })(jQuery);
 
+// (function($) {
+//     var $window = $(window),
+//         $navAbel = $('.navbar-abel');
+//         $navBurger = $('#hamburger');
+//
+//     $window.resize(function resize(){
+//         if ($window.width() < 650) {
+//             return $navAbel.toggleClass('open') + $navBurger.toggleClass('open');
+//         }
+//
+//     }).trigger('resize');
+//
+// })(jQuery);
 
 
 // Set hamburger icon color depending on background (light or dark)

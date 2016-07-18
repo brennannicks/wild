@@ -275,7 +275,7 @@ $(document).ready(function(){
   });
 });
 
-// Float navbar links left on smaller screen size
+// Float navbar links left and collapse navbar on smaller screen sizes 
 
 (function($) {
     var $window = $(window),
@@ -299,20 +299,6 @@ $(document).ready(function(){
 
 
 })(jQuery);
-
-// (function($) {
-//     var $window = $(window),
-//         $navAbel = $('.navbar-abel');
-//         $navBurger = $('#hamburger');
-//
-//     $window.resize(function resize(){
-//         if ($window.width() < 650) {
-//             return $navAbel.toggleClass('open') + $navBurger.toggleClass('open');
-//         }
-//
-//     }).trigger('resize');
-//
-// })(jQuery);
 
 
 // Set hamburger icon color depending on background (light or dark)

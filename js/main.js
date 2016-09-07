@@ -275,30 +275,30 @@ $(document).ready(function(){
   });
 });
 
-// Float navbar links left and collapse navbar on smaller screen sizes 
+// Float navbar links left and collapse navbar on smaller screen sizes
+$(document).ready(function(){
+  var $window = $(window),
+      $navlist = $('#nav-list');
+      $navAbel = $('.navbar-abel');
+      $navBurger = $('#hamburger');
 
-(function($) {
-    var $window = $(window),
-        $navlist = $('#nav-list');
-        $navAbel = $('.navbar-abel');
-        $navBurger = $('#hamburger');
+  $window.resize(function resize(){
+      if ($window.width() < 915) {
+          return $navlist.removeClass('navbar-right').addClass('navbar-left');
+      }
 
-    $window.resize(function resize(){
-        if ($window.width() < 915) {
-            return $navlist.removeClass('navbar-right').addClass('navbar-left');
-        }
+  }).trigger('resize');
 
-    }).trigger('resize');
+  $window.resize(function resize(){
+      if ($window.width() < 650) {
+          return $navAbel.toggleClass('open') + $navBurger.toggleClass('open');
+      }
 
-    $window.resize(function resize(){
-        if ($window.width() < 650) {
-            return $navAbel.toggleClass('open') + $navBurger.toggleClass('open');
-        }
+  }).trigger('resize');
 
-    }).trigger('resize');
+});
 
 
-})(jQuery);
 
 
 // Set hamburger icon color depending on background (light or dark)

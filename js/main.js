@@ -69,11 +69,11 @@ styles:
     var map = new google.maps.Map(mapElement, mapOptions);
 
     // Let's also add a marker while we're at it
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6700, -73.9400),
-        map: map,
-        title: ''
-    });
+    // var marker = new google.maps.Marker({
+    //     position: new google.maps.LatLng(40.6700, -73.9400),
+    //     map: map,
+    //     title: ''
+    // });
 }
 
 /***********************************************
